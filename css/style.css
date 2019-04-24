@@ -7667,6 +7667,7 @@ h1, h2, h3, h4, h5,
       position: absolute;
       left: 0;
       right: 0;
+      display: none;
       bottom: 40px;
       width: 100%;
       text-align: center; }
