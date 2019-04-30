@@ -7617,7 +7617,7 @@ h1, h2, h3, h4, h5,
         right: 0;
         height: 100vh;
         background: #000;
-        opacity: .5; }
+        opacity: .3; }
       .owl-carousel.home-slider .slider-item .slider-text {
         color: #fff;
         height: 750px;
@@ -8270,7 +8270,50 @@ textarea.form-control {
   color: #d4d4d4;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 300; }
-
+.custom-arch{
+  padding:2em !important;
+}
+.categories-tiles{
+  
+  font-size: 1.75rem;
+  color:#fff;
+  margin-bottom:1em;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.categories-tiles.active .categories-tiles-overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.categories-tiles.active .h3{
+  color:#fc8019 !important;
+}
+.project-tiles{
+  max-height: 225px;
+  width:100%;
+  cursor: pointer;
+}
+.tile .project-tiles.active{
+  display: block;
+}
+.tile .project-tiles.hover-active{
+  display: none;
+}
+.tile:hover .project-tiles.hover-active{
+  display: block;
+}
+.tile:hover .project-tiles.active{
+  display: none;
+}
+.categories-tiles-overlay{
+  padding:1em 3em;
+  background-color: rgba(0, 0, 0, 0.3);
+  color:#fff;
+}
+.proj-container{
+  padding:0em 0em 0em 2em;
+}
 .ftco-section .ftco-primary-title {
   margin-top: 0;
   margin-bottom: 30px; }
