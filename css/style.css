@@ -7748,7 +7748,13 @@ h1, h2, h3, h4, h5,
 
 .bg-primary {
   background: #fc8019; }
-
+.modal-close-ico{
+  cursor: pointer;
+  font-size: 18px;
+  position: absolute;
+  right:12px;
+  top:12px;
+}
 .btn {
   cursor: pointer;
   -webkit-border-radius: 0;
@@ -7763,7 +7769,11 @@ h1, h2, h3, h4, h5,
   .btn.btn-primary {
     background: #fc8019;
     border: 1px solid #fc8019;
-    color: #000; }
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 500;} 
     .btn.btn-primary:hover {
       border: 1px solid #fc8019;
       background: transparent !important;
@@ -9000,12 +9010,12 @@ textarea.form-control {
     padding-bottom: 0; }
   .categories li a, .sidelink li a {
     display: block;
-    color: #cccccc; }
+    color: #000; }
     .categories li a span, .sidelink li a span {
       position: absolute;
       right: 0;
       top: 0;
-      color: #ccc; }
+      color: #fc8019; }
   .categories li.active a, .sidelink li.active a {
     color: #000;
     font-style: italic; }
