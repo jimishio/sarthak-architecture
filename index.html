@@ -29,10 +29,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-transparent bg-home ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/nav-logo.png" class="nav-logo-stretch"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
 				<div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
+	        <ul class="navbar-nav ml-auto" style="z-index:11">
 	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
@@ -43,7 +49,7 @@
 	  </nav>
 		<!-- END nav -->
 		
-		<!-- Footer nav -->
+		<!-- Footer nav 
 		<nav class="navbar bottom navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="">
 		      <a class="navbar-brand bottom" href="index.html">
@@ -51,12 +57,12 @@
 					</a>
 		  </div>
 		</nav>
-		<!-- Footer nav End -->
+		 Footer nav End -->
     
 
-    <section class="home-slider owl-carousel img" style="margin-top:-89px;height:100vh" >
+    <section class="home-slider owl-carousel img" style="margin-top:-82px;height:100vh" >
       <div class="slider-item" style="background-image: url(images/slider/2.jpg);">
-      	<div class="overlay"></div>
+      	<!-- <div class="overlay"></div> -->
         <div class="container">
           <div class="row slider-text align-items-center" data-scrollax-parent="true">
           </div>
