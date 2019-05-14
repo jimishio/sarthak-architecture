@@ -3277,18 +3277,16 @@ input[type="button"].btn-block {
   .nav-logo{
     position: absolute;
     top: 5px;
-    right: 10%;
-    left: 10%;
+    left: 0%;
     height: 76px;
-    max-width: 75%;
+    max-width: 100%;
     width: 100vw;}
   .nav-logo-stretch{
     position: absolute;
     top: 5px;
-    right: 10%;
-    left: 10%;
+    left: 0%;
     height: 76px;
-    max-width: 75%;
+    max-width: 100%;
     width: 100vw;
   }
   .navbar > .container,
