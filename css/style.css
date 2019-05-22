@@ -8347,18 +8347,23 @@ textarea.form-control {
     
     vertical-align: middle;
 }
+.tile .project-tiles.active{
+  display: block;
+}
+.tile .project-tiles.hover-active{
+  display: none;
+}
+.tile:hover .project-tiles.hover-active{
+  display: block;
+}
+.tile:hover .project-tiles.active{
+  display: none;}
 .categories-tiles-overlay{
   padding:1em 3em;
   background-color: rgba(0, 0, 0, 0.3);
   color:#fff;
 }
-.project-tiles:hover{
-  -webkit-transform:scale(1.5); /* Safari and Chrome */
-    -moz-transform:scale(1.5); /* Firefox */
-    -ms-transform:scale(1.5); /* IE 9 */
-    -o-transform:scale(1.5); /* Opera */
-    transform:scale(1.5);
-}
+
 .proj-container{
   padding:0em 0em 0em 2em;
 }
