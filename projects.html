@@ -29,10 +29,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  	<!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light gray-bd" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">
-          <img src="images/nav-logo.png" class="nav-logo"/>
+          <img src="images/nav-logo.png" class="nav-logo-stretch"/>
         </a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
@@ -42,35 +42,70 @@
 	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	          <li class="nav-item active"><a href="projects.html" class="nav-link">Projects</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item "><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 		  </div>
-	  </nav> -->
+	  </nav>
     <!-- END nav -->
-    
-	  <section class="ftco-about text-center d-md-flex projects-sec">
-      <div class="overlay"></div>
-      <div class="one-half img projects-shell" style="background-image: url(images/architect.jpg);background-size: cover;background-position: center">
-        <div class="heading-section ftco-animate projects-inside">
-            <a style="margin-left:-80px;" href="architecture.html">
-                <h2 class="mb-4 main-title">Architecture </h2>
-            </a>
+
+    <section class="ftco-appointment">
+			<div class="overlay"></div>
+    	<div class="container-wrap">
+    		<div class="row no-gutters d-md-flex align-items-center" style="max-height: 480px;margin:50px 0px;">
+    			<div class="col-md-6 d-flex align-self-stretch img projects-shell" style="padding-right: 10px;background-color: #fff;">
+            <div style="background-image: url(images/architect.jpg);background-size: cover;background-position: center;max-height: 480px;width: 100%;height:100%">
+              <div class="heading-section ftco-animate projects-inside">
+                <a style="margin-left:-160px;" href="architecture.html">
+                    <h2 class="mb-4 main-title">Architecture </h2>
+                </a>
+              </div>
+            </div>
           </div>
-      </div>
-    	<div class="one-half ftco-animate projects-shell" style="background-image: url(images/interior.jpg);background-size: cover;background-position: center">
-        <div class="heading-section ftco-animate projects-inside">
-            <a style="margin-left:-135px;" href="interior.html">
-                <h2 class="mb-4 main-title">Interior Design</h2>
-            </a>
-        </div>
+          <div class="col-md-6 d-flex align-self-stretch ftco-animate projects-shell" style="padding-left:10px;background-color: #fff;">
+            <div style="background-image: url(images/interior.jpg);background-size: cover;background-position: center;max-height: 480px;width:100%;height:100%">
+              <div class="heading-section ftco-animate projects-inside">
+                  <a style="margin-left:-73px;" href="interior.html">
+                      <h2 class="mb-4 main-title">Interior</h2>
+                  </a>
+              </div>
+            </div>
+          </div>    			
+    		</div>
     	</div>
     </section>
+    
+    <footer class="ftco-footer ftco-section img">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-6 mt-5 mb-5 mb-md-5">
+            <div class="text-right">
+              <p style="margin-top:5px;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved with Sarthak Architect & Interior Designers
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
+  
+  </body>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -89,5 +124,4 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
-  </body>
 </html>

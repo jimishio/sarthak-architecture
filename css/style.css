@@ -358,6 +358,10 @@ hr {
 
 small,
 .small {
+  font-size: 90%;
+  font-weight: 400; }
+
+.smaller {
   font-size: 80%;
   font-weight: 400; }
 
@@ -7356,7 +7360,7 @@ h1, h2, h3, h4, h5,
   color: #E05723 !important; }
 
 .navbar.gray-bd{
-  border-bottom: gray 1px solid;
+  border-bottom: #f3f3f3 1px solid;
 }
 .about{
   background-color:#000;
@@ -7375,6 +7379,7 @@ h1, h2, h3, h4, h5,
   height: 100%;
   position: relative;
   width: 100%;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.5)
 }
 .projects-inside > a{
@@ -8332,10 +8337,50 @@ textarea.form-control {
 .tile{
   display: inline-block;
   overflow: hidden;
+  max-height: 470px;
+}
+.tile img{
+  min-height: 225px;
   max-height: 225px;
+}
+.tile img.mini{
+  min-height: 110px;
+  max-height: 95px;
+}
+.tile img.cover{
+  height: 470px;
+  min-height:470px;
+}
+.mar-l-20{
+  margin-left:20px;
+}
+.link-holder{
+
+}
+.link-holder a{
+  color:#000 !important;
+}
+.link-holder a:hover{
+  color: #E05723 !important;
+}
+.link-holder a.active{
+  color: #E05723 !important;
 }
 .project-tiles{
   max-height: 225px;
+  width:100%;
+  cursor: pointer;
+
+  -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    
+    vertical-align: middle;
+}
+.project-tiles.mini{
+  max-height: 95px;
   width:100%;
   cursor: pointer;
 
@@ -8362,6 +8407,11 @@ textarea.form-control {
   padding:1em 3em;
   background-color: rgba(0, 0, 0, 0.3);
   color:#fff;
+}
+.tile h4 {
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .proj-container{
