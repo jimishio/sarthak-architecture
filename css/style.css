@@ -4445,7 +4445,7 @@ button.close {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #000;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -7780,7 +7780,9 @@ h1, h2, h3, h4, h5,
 
 .bg-light {
   background: #fafafa !important; }
-
+.r-bor-1{
+  border-right:#000 1px solid;
+}
 .bg-primary {
   background: #E05723; }
 .modal-close-ico{
@@ -7788,6 +7790,7 @@ h1, h2, h3, h4, h5,
   font-size: 18px;
   position: absolute;
   right:12px;
+  color:#fff !important;
   top:12px;
 }
 .btn {
