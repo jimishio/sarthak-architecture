@@ -209,54 +209,99 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="../../js/google-map.js"></script>
   <script src="../../js/main.js"></script>
-  <!-- <script>
-      $('.categories-tiles').on('click',function(e){
-        console.log('came here');
-        console.log(e);
-        removeActive();
-        $(this).addClass('active');
-
-        hideRows();
-
-        if($(this).hasClass('religious')){
-            $('.religious-row').css('display','inherit');
-        }
-
-        if($(this).hasClass('recreational')){
-            $('.religiorecreationalus-row').css('display','inherit');
-        }
-
-        if($(this).hasClass('housing')){
-            $('.housing-row').css('display','inherit');
-        }
-
-        if($(this).hasClass('commercial')){
-            $('.commercial-row').css('display','inherit');
-        }
-
-        if($(this).hasClass('residential')){
-            $('.residential-row').css('display','inherit');
-        }
-
-        if($(this).hasClass('corporate')){
-            $('.corporate-row').css('display','inherit');
-        }
-      });
-
-      var removeActive = function(){
-          var allCategories = document.getElementsByClassName('categories-tiles');
-          for(var i=0;i<allCategories.length;i++){
-              allCategories[i].classList.remove('active');
+  <script>
+        $('.link-holder.small').on('click',function(e){
+          console.log('came here');
+          console.log(e);
+          removeActive();
+          //$(this).children().addClass('active');
+          
+  
+          // hideRows();
+  
+          if($(this).hasClass('a-religious')){
+              addSubClass('.a-religious-sub');
+              
           }
-      }
-
-      var hideRows = function(){
-          var allRows = document.getElementsByClassName('arch-row');
-          for(var i=0;i<allRows.length;i++){
-              allRows[i].style.display = "none";
+  
+          if($(this).hasClass('a-recreational')){
+              addSubClass('.a-recreational-sub');
           }
-      }
-  </script> -->
+  
+          if($(this).hasClass('a-housing')){
+              addSubClass('.a-housing-sub');
+          }
+  
+          if($(this).hasClass('a-commercial')){
+              addSubClass('.a-commercial-sub');
+          }
+  
+          if($(this).hasClass('a-residential')){
+              addSubClass('.a-residential-sub');
+          }
+  
+          if($(this).hasClass('a-corporate')){
+              addSubClass('.a-corporate-sub');
+          }
+  
+          if($(this).hasClass('i-corporate')){
+              addSubClass('.i-corporate-sub');
+              
+          }
+  
+          if($(this).hasClass('i-recreational')){
+              addSubClass('.i-reicreational-sub');
+          }
+  
+          if($(this).hasClass('i-hospitality')){
+              addSubClass('.a-hospitality-sub');
+          }
+  
+          if($(this).hasClass('i-commercial')){
+              addSubClass('.i-commercial-sub');
+          }
+  
+          if($(this).hasClass('i-residential')){
+              addSubClass('.i-residential-sub');
+          }
+  
+          if($(this).hasClass('i-institutional')){
+              addSubClass('.i-institutional-sub');
+          }
+  
+          $(this).children().addClass('active');
+  
+        });
+  
+        var removeActive = function(){
+            console.log("came here too");
+  
+            var activeCategory = $('a.active');
+            activeCategory.removeClass('active');
+          //   var allCategories = document.getElementsByClassName('.link-holder.mar-l-20.smaller.active');
+            var allCategories = $('.link-holder.mar-l-20.smaller.active');
+            console.log("length : "+allCategories.length);
+            for(var i=0;i<allCategories.length;i++){
+                allCategories[i].classList.remove('active');
+                console.log('a');
+            }
+        }
+  
+        var addSubClass = function(subClassName){
+            var classString = '.link-holder.mar-l-20.smaller'+subClassName;
+            var allCategories = $(classString);
+            for(var i=0;i<allCategories.length;i++){
+                $(allCategories[i]).addClass('active');
+            }
+        }
+  
+        var hideRows = function(){
+            var allRows = document.getElementsByClassName('arch-row');
+            for(var i=0;i<allRows.length;i++){
+                allRows[i].style.display = "none";
+            }
+        }
+    </script>
 
     
 </html>
