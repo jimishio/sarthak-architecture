@@ -166,40 +166,40 @@
                           <a class="">Residential</a>
                       </div>
                       <div class="a-residential-sub link-holder mar-l-20 smaller ">
-                          <a class="" href="../../projects/architecture/residential/mr-shah-bungalow.html">Mr. Shah's Bungalow</a>
+                          <a class="" href="../../../projects/architecture/residential/mr-shah-bungalow.html">Mr. Shah's Bungalow</a>
                       </div>
                       <div class="a-residential-sub link-holder mar-l-20 smaller ">
-                          <a class="" href="../../projects/architecture/residential/mr-vaghela-twin-bungalow.html">Mr. Vaghela's Twin Bungalows</a>
+                          <a class="" href="../../../projects/architecture/residential/mr-vaghela-twin-bungalow.html">Mr. Vaghela's Twin Bungalows</a>
                       </div>
                       <div class="a-religious link-holder small">
                           <a class="">Religious</a>
                       </div>
                       <div class="a-religious-sub link-holder mar-l-20 smaller">
-                          <a class="" href="../../projects/architecture/religious/alliance-church.html">Alliance Church</a>
+                          <a class="" href="../../../projects/architecture/religious/alliance-church.html">Alliance Church</a>
                       </div>
                       <div class="a-housing link-holder small">
                           <a class="">Housing</a>
                       </div>
                       <div class="a-housing-sub link-holder mar-l-20 smaller">
-                          <a class="" href="../../projects/architecture/housing/athashri-post-retirement-housing.html">Athashri Post-Retirement Housing</a>
+                          <a class="" href="../../../projects/architecture/housing/athashri-post-retirement-housing.html">Athashri Post-Retirement Housing</a>
                       </div>
                       <div class="a-housing-sub link-holder mar-l-20 smaller">
-                          <a class="" href="../../projects/architecture/housing/tatva-heights.html">Tatva Heights</a>
+                          <a class="" href="../../../projects/architecture/housing/tatva-heights.html">Tatva Heights</a>
                       </div>
                       <div class="a-commercial link-holder small">
                           <a class="">Commercial</a>
                       </div>
                       <div class="a-commercial-sub link-holder mar-l-20 smaller ">
-                          <a class="" href="../../architecture/commercial/lusaka-hypermarket.html">Lusaka Hypermarket</a>
+                          <a class="" href="../../../projects/architecture/commercial/lusaka-hypermarket.html">Lusaka Hypermarket</a>
                       </div>
                       <div class="a-corporate link-holder small">
                           <a class="">Corporate</a>
                       </div>
                       <div class="a-corporate-sub link-holder mar-l-20 smaller ">
-                          <a class="" href="../../projects/architecture/corporate/sterling-bio-tech.html">Sterling Bio Tech</a>
+                          <a class="" href="../../../projects/architecture/corporate/sterling-bio-tech.html">Sterling Bio Tech</a>
                       </div>
                       <div class="a-corporate-sub link-holder mar-l-20 smaller ">
-                          <a class="" href="../../projects/architecture/corporate/tam-media-center.html">Tam Media Center</a>
+                          <a class="" href="../../../projects/architecture/corporate/tam-media-center.html">Tam Media Center</a>
                       </div>
                       <div class="a-recreational link-holder small">
                           <a class="">Recreational</a>
@@ -213,19 +213,19 @@
                           <a class="">Residential</a>
                       </div>
                       <div class="i-residential-sub link-holder mar-l-20 smaller">
-                          <a class="" href="../../projects/interior/residential/mr-shah-bungalow.html">Mr. Shah's Bungalow</a>
+                          <a class="" href="../../../projects/interior/residential/mr-shah-bungalow.html">Mr. Shah's Bungalow</a>
                       </div>
                       <div class="i-commercial link-holder small">
                           <a class="">Commercial</a>
                       </div>
                       <div class="i-commercial-sub link-holder mar-l-20 smaller active">
-                          <a class="active" href="../../projects/interior/commercial/narayan-jewellers.html">Narayan Jewellers</a>
+                          <a class="active" href="../../../projects/interior/commercial/narayan-jewellers.html">Narayan Jewellers</a>
                       </div>
                       <div class="i-corporate link-holder small">
                           <a class="">Corporate</a>
                       </div>
                       <div class="i-corporate-sub link-holder mar-l-20 smaller">
-                          <a class="" href="../../projects/interior/corporate/hdfc-house.html">HDFC House</a>
+                          <a class="" href="../../../projects/interior/corporate/hdfc-house.html">HDFC House</a>
                       </div>
                       <div class="i-hospitality link-holder small">
                           <a class="">Hospitality</a>
@@ -237,7 +237,7 @@
                           <a class="">Recreational</a>
                       </div>   
                       <div class="i-recreational-sub link-holder mar-l-20 smaller">
-                          <a class="" href="../../projects/interior/recreational/sterling-health-mall.html">Sterling Health Mall</a>
+                          <a class="" href="../../../projects/interior/recreational/sterling-health-mall.html">Sterling Health Mall</a>
                       </div> 
                   </div>
                 </div>
@@ -380,6 +380,98 @@
   <script src="../../../js/jssor.slider.js"></script>
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
+
+        $('.link-holder.small').on('click',function(e){
+          console.log('came here');
+          console.log(e);
+          removeActive();
+          //$(this).children().addClass('active');
+          
+  
+          // hideRows();
+  
+          if($(this).hasClass('a-religious')){
+              addSubClass('.a-religious-sub');
+              
+          }
+  
+          if($(this).hasClass('a-recreational')){
+              addSubClass('.a-recreational-sub');
+          }
+  
+          if($(this).hasClass('a-housing')){
+              addSubClass('.a-housing-sub');
+          }
+  
+          if($(this).hasClass('a-commercial')){
+              addSubClass('.a-commercial-sub');
+          }
+  
+          if($(this).hasClass('a-residential')){
+              addSubClass('.a-residential-sub');
+          }
+  
+          if($(this).hasClass('a-corporate')){
+              addSubClass('.a-corporate-sub');
+          }
+  
+          if($(this).hasClass('i-corporate')){
+              addSubClass('.i-corporate-sub');
+              
+          }
+  
+          if($(this).hasClass('i-recreational')){
+              addSubClass('.i-reicreational-sub');
+          }
+  
+          if($(this).hasClass('i-hospitality')){
+              addSubClass('.a-hospitality-sub');
+          }
+  
+          if($(this).hasClass('i-commercial')){
+              addSubClass('.i-commercial-sub');
+          }
+  
+          if($(this).hasClass('i-residential')){
+              addSubClass('.i-residential-sub');
+          }
+  
+          if($(this).hasClass('i-institutional')){
+              addSubClass('.i-institutional-sub');
+          }
+  
+          $(this).children().addClass('active');
+  
+        });
+  
+        var removeActive = function(){
+            console.log("came here too");
+  
+            var activeCategory = $('a.active');
+            activeCategory.removeClass('active');
+          //   var allCategories = document.getElementsByClassName('.link-holder.mar-l-20.smaller.active');
+            var allCategories = $('.link-holder.mar-l-20.smaller.active');
+            console.log("length : "+allCategories.length);
+            for(var i=0;i<allCategories.length;i++){
+                allCategories[i].classList.remove('active');
+                console.log('a');
+            }
+        }
+  
+        var addSubClass = function(subClassName){
+            var classString = '.link-holder.mar-l-20.smaller'+subClassName;
+            var allCategories = $(classString);
+            for(var i=0;i<allCategories.length;i++){
+                $(allCategories[i]).addClass('active');
+            }
+        }
+  
+        var hideRows = function(){
+            var allRows = document.getElementsByClassName('arch-row');
+            for(var i=0;i<allRows.length;i++){
+                allRows[i].style.display = "none";
+            }
+        }
 
         var jssor_1_SlideshowTransitions = [
           {$Duration:1200,$Zoom:1,$Easing:{$Zoom:$Jease$.$InCubic,$Opacity:$Jease$.$OutQuad},$Opacity:2},
