@@ -8355,7 +8355,14 @@ textarea.form-control {
   margin-left:20px;
 }
 .link-holder{
-
+  cursor: pointer;
+}
+.link-holder.smaller{
+  display: none;
+  
+}
+.link-holder.smaller.active{
+  display: block;
 }
 .link-holder a{
   color:#000 !important;
